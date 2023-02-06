@@ -1,22 +1,116 @@
+/* NAV */
+
 nav {
     width: 100%;
-    position: fixed;
     min-height: 100px;
     background-color: #0084fd;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5em;
+    margin-bottom: 3em;
 }
 
 .nav-right a {
     font-size: 2em;
     color: white;
 }
+/* //NAV */
 
+
+
+
+
+/* MAIN BOX SETTINGS */
+
+section .box {
+    display: flex;
+    max-width: 100%;
+    background-color: #b5ddff;
+    margin: 1em;
+    border-radius: 5%;
+    align-items: center;
+    line-height: 2em;
+}
+
+section .box .box-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+}
+
+.box .box-title, .box-description, a {
+    padding-bottom: 1em;
+}
+
+.box .box-title {
+    padding-top: 1em;
+    color: #0084fd;
+}
+
+.box .box-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section .box-img #phone {
+    width: 80%;
+}
+
+section .box .box-logo i {
+    font-size: 5em;
+    padding-top: 0.5em;
+    color: #0084fd;
+}
+
+section .box a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #0084fd;
+    border-radius: 30px;
+    padding: 0.5em 3em;
+}
+
+
+/* //MAIN BOX SETTINGS */
+
+
+
+
+/* FIRST SECTION */
+main #first-section {
+    display: flex;
+    gap: 2em;
+}
+
+/* //FIRST SECTION */
+
+
+
+
+
+
+
+/* MOBILE VIEW */
 
 @media screen and (max-width: 576px) {
     body {
         max-width: 100%;
+    }
+
+    main #first-section {
+        flex-flow: column wrap;
+    }
+
+    section .box {
+        flex-flow: column wrap;
+    }
+    
+    section .box .box-text{
+        max-width: 90%;
     }
 }
