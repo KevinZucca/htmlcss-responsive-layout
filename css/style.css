@@ -23,6 +23,12 @@ nav {
 
 /* MAIN BOX SETTINGS */
 
+main section {
+    margin-bottom: 3em;
+    line-height: 2em;
+    padding: 2em 0 2em 0;
+}
+
 section .box {
     display: flex;
     max-width: 100%;
@@ -30,7 +36,7 @@ section .box {
     margin: 1em;
     border-radius: 5%;
     align-items: center;
-    line-height: 2em;
+    
 }
 
 section .box .box-text {
@@ -75,6 +81,10 @@ section .box a {
     padding: 0.5em 3em;
 }
 
+.purple-text {
+    color: #9792e4;
+}
+
 
 /* //MAIN BOX SETTINGS */
 
@@ -90,6 +100,255 @@ main #first-section {
 /* //FIRST SECTION */
 
 
+
+
+
+/* SECOND SECTION */
+main #second-section {
+    max-width: 100%;
+    background-color: #9792e4;
+    display: flex;
+    line-height: 2em;
+}
+
+main #second-section #first-part .second-text{
+    color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+main #second-section #first-part .second-text h1 {
+    margin-bottom: 1.5em;
+}
+
+
+#second-section .second-img {
+    height: auto;
+}
+
+#second-section #planning-1 {
+    width: 100%;
+    padding: 1em;
+}
+
+#second-section #second-part {
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 1em;
+    text-align: center;
+}
+
+#second-section #planning-2 {
+    width: 100%;
+}
+
+#second-section #second-part a {
+    color: black;
+}
+
+/* //SECOND SECTION */
+
+
+
+
+
+
+/* THIRD SECTION  */
+#third-section #testimonials-intro * {
+    padding-bottom: 1em;
+    text-align: center;
+    padding: 0.8em;
+}
+
+#third-section #testimonials-intro h2 {
+    font-size: 2em;
+}
+
+#third-section .card {
+    background-color: #9792e4;
+    display: flex;
+    color: white;
+    text-align: center;
+    margin: 1em;
+    border-radius: 30px;
+    padding: 0.5em;
+}
+
+#third-section .card .card-photo {
+    padding: 1em;
+}
+
+#third-section .card .card-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#third-section .card .card-text p {
+    margin-bottom: 1em;
+}
+/* //THIRD SECTION */
+
+
+
+
+/* FOURTH-SECTION  */
+main #fourth-section {
+    background-color: #9792e4;
+    display: flex;
+}
+
+main #fourth-title {
+    color: white;
+    padding: 0 1em 2em 0;
+    text-align: center;
+}
+
+#fourth-section .skills {
+    background-color: #fff;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#fourth-section .skills * {
+    padding-bottom: 0.3em;
+}
+
+#fourth-section .skills .big-number {
+    font-size: 2.5em;
+    padding-top: 1em;
+}
+
+#fourth-section .skills a {
+    color: white;
+    text-decoration: none;
+    background-color: #9792e4;
+    padding: 0.5em 3em;
+    border-radius: 30px;
+}
+
+
+/* //FOURTH-SECTION */
+
+
+
+
+
+/* FIFTH-SECTION  */
+main #fifth-section {
+    display: flex;
+    padding: 1em;
+}
+
+main #fifth-section #about-us-description h1 {
+    font-size: 3.5em;
+    padding-bottom: 1em;
+}
+
+main #fifth-section #about-us-description p {
+    padding-bottom: 2em;
+}
+
+#fifth-section #about-us-photo {
+    padding: 1em;
+    width: 80%;
+    align-self: flex-start;
+}
+
+#fifth-section #about-us-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#fifth-section #about-us-photo-section a {
+    color: white;
+    background-color: #9792e4;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0.5em 1em;
+}
+
+#fifth-section #about-us-text h2 {
+    margin-bottom: 1em;
+}
+/* //FIFTH-SECTION */
+
+
+
+
+/* SIXTH-SECTION */
+main #sixth-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #9792e4;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main #sixth-section * {
+    padding-bottom: 1.3em;
+}
+
+#sixth-section #orange {
+    font-size: 4em;
+    color: #fdc15f;
+}
+
+#sixth-section #get-started-third a {
+    color: #9792e4;
+    background-color: white;
+    padding: 0.5em 2em;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#sixth-section #get-started-third p {
+    margin-top: 1.3em;
+}
+
+#sixth-section #get-started-third span {
+    text-decoration: underline;
+}
+
+
+/* //SIXTH-SECTION */
+
+
+
+
+/* SEVENTH-SECTION */
+main #seventh-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    background-color: #333333 ;
+    color: white;
+    padding: 1em;
+}
+
+main #seventh-section * {
+    padding-bottom: 2em;
+}
+
+main #seventh-section #seventh-up {
+    margin-top: 2em;
+}
+
+main #seventh-section a {
+    color: #9792e4;
+}
+/* ///SEVENTH-SECTION */
 
 
 
@@ -113,4 +372,33 @@ main #first-section {
     section .box .box-text{
         max-width: 90%;
     }
+
+
+
+    main #second-section {
+        flex-flow: column wrap;
+    }
+
+
+    main #third-section .card {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+
+
+    main #fourth-section {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    main #fifth-section {
+        flex-flow: column wrap;
+        align-items: center;
+    }
 }
+
+
+
+/* TABLET VIEW */
+@media screen and (max-width: 576px) 
