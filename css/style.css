@@ -1,14 +1,15 @@
 /* NAV */
-
 nav {
     width: 100%;
     min-height: 100px;
     background-color: #0084fd;
+    margin-bottom: 3em;
+}
+nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5em;
-    margin-bottom: 3em;
 }
 
 .nav-right a {
@@ -40,61 +41,63 @@ main section {
 
 
 /* FIRST SECTION */
-main #first-section {
+main #first-section .first-container {
     display: flex;
     gap: 20px;
     padding: 1em;
 }
 
-section .box {
+section .first-container .box {
     display: flex;
     flex-flow: column wrap;
     background-color: #b5ddff;
     border-radius: 5%;
     align-items: center;
-    /* padding: 1em; */
+    padding: 1em;
    
 }
 
+section #first-box {
+    padding-bottom: 0;
+}
+
 section .box .box-text {
-    /* padding: 1em; */
+    padding: 1em;
     text-align: center;
 }
 
-
-section .box p {
-    /* padding-bottom: 1em;
-    padding-top: 1em; */
-}
-
 .box .box-title {
-    /* padding-top: 1em; */
+    padding-top: 1em;
     color: #0084fd;
 }
 
-.box .box-img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.box .box-img {   
+    width: 70%;
 }
 
 section .box-img #phone {
-    width: 80%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 section .box .box-logo i {
     font-size: 5em;
-    /* padding-top: 0.5em; */
+    padding-top: 0.5em;
     color: #0084fd;
 }
 
 section .box a {
+    display: inline-block;
+
     color: white;
     text-decoration: none;
     font-size: 1.5em;
     background-color: #0084fd;
     border-radius: 30px;
-    padding: 0.5em 3em;
+    padding: 0.5em 2em;
+
+    white-space: nowrap;
 }
 
 /* //FIRST SECTION */
@@ -106,6 +109,9 @@ section .box a {
 /* SECOND SECTION */
 main #second-section {
     background-color: #9792e4;
+}
+
+main #second-section .second-container {
     display: flex;
     line-height: 2em;
 }
@@ -141,7 +147,7 @@ main #second-section #first-part .second-text h1 {
 }
 
 #second-section #planning-2 {
-    width: 100%;
+    max-width: 100%;
 }
 
 #second-section #second-part a {
@@ -156,13 +162,13 @@ main #second-section #first-part .second-text h1 {
 
 
 /* THIRD SECTION  */
-#third-section #testimonials-intro * {
+#third-section .third-container #testimonials-intro * {
     padding-bottom: 1em;
     text-align: center;
     padding: 0.8em;
 }
 
-#third-section #testimonials-intro h2 {
+#third-section .third-container #testimonials-intro h2 {
     font-size: 2em;
 }
 
@@ -198,6 +204,9 @@ main #second-section #first-part .second-text h1 {
 /* FOURTH-SECTION  */
 main #fourth-section {
     background-color: #9792e4;
+}
+
+main #fourth-section .fourth-container {
     display: flex;
 }
 
@@ -241,7 +250,7 @@ main #fourth-title {
 
 
 /* FIFTH-SECTION  */
-main #fifth-section {
+main #fifth-section .fifth-container {
     display: flex;
     padding: 1em;
 }
@@ -285,10 +294,14 @@ main #fifth-section #about-us-description p {
 
 /* SIXTH-SECTION */
 main #sixth-section {
+    background-color: #9792e4;
+
+}
+
+main #sixth-section .sixth-container {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    background-color: #9792e4;
     color: white;
     padding: 2em;
     text-align: center;
@@ -359,13 +372,13 @@ main #seventh-section a {
 
 @media screen and (max-width: 576px) {
 
-    main #first-section {
+    main #first-section .first-container {
         flex-flow: row wrap;
     }
 
 
 
-    main #second-section {
+    main #second-section .second-container{
         flex-flow: column wrap;
     }
 
@@ -377,12 +390,12 @@ main #seventh-section a {
 
 
 
-    main #fourth-section {
+    main #fourth-section .fourth-container {
         flex-flow: column wrap;
         align-items: center;
     }
 
-    main #fifth-section {
+    main #fifth-section .fifth-container {
         flex-flow: column wrap;
         align-items: center;
     }
@@ -394,44 +407,95 @@ main #seventh-section a {
 @media screen and (min-width: 577px) and (max-width: 991px) {
     
 
-    main #first-section {
+    main #first-section .first-container{
         max-width: 100%;
         flex-flow: row wrap;
     }
 
-    main #first-section .box {
-       width: calc(100% / 3 - 4em);
+    main #first-section .first-container .box {
+       width: calc(100% / 3 - 20px);
     }
 
+    main #first-section .first-container #first-box {
+        width: calc(100% / 3 * 2);
+    }
+
+ 
 
 
-    main #second-section {
+    main #second-section .second-container {
         flex-flow: column wrap;
     }
 
-    main #fourth-section {
+
+
+
+    main #fourth-section .fourth-container{
         flex-flow: row wrap;
     }
 
-    main #fourth-section #fourth-title {
+    main #fourth-section .fourth-container #fourth-title {
         width: 100%;
     }
 
-    main #fourth-section .skills {
+    main #fourth-section .fourth-container .skills {
         max-width: calc(100% / 2 - 2em);
     }
 
-    main #fifth-section {
+
+
+    
+    main #fifth-section .fifth-container {
         gap: 2em;
     }
 }
 
 @media screen and (min-width: 992px) {
 
-    section {
-        width: 100%;
+    .centered {
+        max-width: 1200px;
+        margin: auto;
     }
 
- 
+
+    section {
+        max-width: 100%;
+    }
+
+    main #first-section .first-container{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+    main #first-section .first-container .box {
+       width: calc(100% / 3 - 20px);
+    }
+
+    main #first-section .first-container #first-box {
+        width: calc(100% / 3 * 2);
+        flex-flow: row;
+    } 
+
+    
+
+    main #third-section .card {
+        align-items: center;
+        text-align: left;
+    }
+
+
+
+    main #fourth-section .fourth-container {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    main #fourth-section .fourth-container .skills {
+        width: calc(100% / 3 - 4em);
+    }
+
+    main #fourth-section .fourth-container #fourth-title {
+       width: 100%;
+    }
 }
     
