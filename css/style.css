@@ -21,7 +21,7 @@ nav {
 
 
 
-/* MAIN BOX SETTINGS */
+/* MAIN SETTINGS */
 
 main section {
     margin-bottom: 3em;
@@ -29,30 +29,46 @@ main section {
     padding: 2em 0 2em 0;
 }
 
+.purple-text {
+    color: #9792e4;
+}
+
+
+/* //MAIN SETTINGS */
+
+
+
+
+/* FIRST SECTION */
+main #first-section {
+    display: flex;
+    gap: 20px;
+    padding: 1em;
+}
+
 section .box {
     display: flex;
-    max-width: 100%;
+    flex-flow: column wrap;
     background-color: #b5ddff;
-    margin: 1em;
     border-radius: 5%;
     align-items: center;
-    
+    /* padding: 1em; */
+   
 }
 
 section .box .box-text {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    padding: 1em;
+    /* padding: 1em; */
     text-align: center;
 }
 
-.box .box-title, .box-description, a {
-    padding-bottom: 1em;
+
+section .box p {
+    /* padding-bottom: 1em;
+    padding-top: 1em; */
 }
 
 .box .box-title {
-    padding-top: 1em;
+    /* padding-top: 1em; */
     color: #0084fd;
 }
 
@@ -68,7 +84,7 @@ section .box-img #phone {
 
 section .box .box-logo i {
     font-size: 5em;
-    padding-top: 0.5em;
+    /* padding-top: 0.5em; */
     color: #0084fd;
 }
 
@@ -81,22 +97,6 @@ section .box a {
     padding: 0.5em 3em;
 }
 
-.purple-text {
-    color: #9792e4;
-}
-
-
-/* //MAIN BOX SETTINGS */
-
-
-
-
-/* FIRST SECTION */
-main #first-section {
-    display: flex;
-    gap: 2em;
-}
-
 /* //FIRST SECTION */
 
 
@@ -105,7 +105,6 @@ main #first-section {
 
 /* SECOND SECTION */
 main #second-section {
-    max-width: 100%;
     background-color: #9792e4;
     display: flex;
     line-height: 2em;
@@ -132,6 +131,8 @@ main #second-section #first-part .second-text h1 {
 }
 
 #second-section #second-part {
+    display: flex;
+    flex-flow: column wrap;
     padding: 1em;
     background-color: #fff;
     border-radius: 30px;
@@ -180,8 +181,8 @@ main #second-section #first-part .second-text h1 {
 }
 
 #third-section .card .card-photo img{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -256,13 +257,12 @@ main #fifth-section #about-us-description p {
 
 #fifth-section #about-us-photo {
     padding: 1em;
-    width: 80%;
     align-self: flex-start;
 }
 
 #fifth-section #about-us-photo img{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -335,6 +335,7 @@ main #seventh-section {
     background-color: #333333 ;
     color: white;
     padding: 1em;
+    margin-bottom: 0;
 }
 
 main #seventh-section * {
@@ -357,20 +358,9 @@ main #seventh-section a {
 /* MOBILE VIEW */
 
 @media screen and (max-width: 576px) {
-    body {
-        max-width: 100%;
-    }
 
     main #first-section {
-        flex-flow: column wrap;
-    }
-
-    section .box {
-        flex-flow: column wrap;
-    }
-    
-    section .box .box-text{
-        max-width: 90%;
+        flex-flow: row wrap;
     }
 
 
@@ -401,4 +391,47 @@ main #seventh-section a {
 
 
 /* TABLET VIEW */
-@media screen and (max-width: 576px) 
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    
+
+    main #first-section {
+        max-width: 100%;
+        flex-flow: row wrap;
+    }
+
+    main #first-section .box {
+       width: calc(100% / 3 - 4em);
+    }
+
+
+
+    main #second-section {
+        flex-flow: column wrap;
+    }
+
+    main #fourth-section {
+        flex-flow: row wrap;
+    }
+
+    main #fourth-section #fourth-title {
+        width: 100%;
+    }
+
+    main #fourth-section .skills {
+        max-width: calc(100% / 2 - 2em);
+    }
+
+    main #fifth-section {
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    section {
+        width: 100%;
+    }
+
+ 
+}
+    
