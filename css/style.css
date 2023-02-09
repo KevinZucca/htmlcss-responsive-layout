@@ -413,11 +413,12 @@ main #seventh-section a {
     }
 
     main #first-section .first-container .box {
-       width: calc(100% / 3 - 20px);
+       width: calc(100% / 3 - 20px / 3 * 2);
     }
 
     main #first-section .first-container #first-box {
-        width: calc(100% / 3 * 2);
+        width: calc(100% / 2 - 20px);
+        flex-grow: 1;
     }
 
  
